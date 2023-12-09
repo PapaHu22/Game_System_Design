@@ -20,10 +20,15 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Perteburk_console.cpp" />
+    <ClCompile Include="Puzzle2.cpp" />
+    <ClCompile Include="Puzzle3.cpp" />
+    <ClCompile Include="Puzzle4.cpp" />
     <ClCompile Include="P_C.cpp" />
+    <ClCompile Include="Puzzle1.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Console.h" />
+    <ClInclude Include="Puzzle.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>

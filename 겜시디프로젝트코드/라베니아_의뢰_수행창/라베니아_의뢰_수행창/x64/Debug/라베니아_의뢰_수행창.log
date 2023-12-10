@@ -1,5 +1,11 @@
 ﻿  Lavenia_console.cpp
-  L_C.cpp
+  d_puzzle1.cpp
+C:\Users\doo71\OneDrive\문서\GitHub\Game_System_Design\겜시디프로젝트코드\라베니아_의뢰_수행창\라베니아_의뢰_수행창\d_puzzle1.cpp(11,21): warning C4129: 'G': 문자 이스케이프 시퀀스를 인식할 수 없습니다.
+  d_puzzle2.cpp
   코드를 생성하고 있습니다...
-C:\Users\doo71\OneDrive\문서\GitHub\Game_System_Design\겜시디프로젝트코드\라베니아_의뢰_수행창\라베니아_의뢰_수행창\L_C.cpp(195): warning C4715: 'Console::Find_File': 모든 제어 경로에서 값을 반환하지는 않습니다.
+C:\Users\doo71\OneDrive\문서\GitHub\Game_System_Design\겜시디프로젝트코드\라베니아_의뢰_수행창\라베니아_의뢰_수행창\d_puzzle2.cpp(20): warning C4715: 'Findtext::FileScan': 모든 제어 경로에서 값을 반환하지는 않습니다.
+C:\Users\doo71\OneDrive\문서\GitHub\Game_System_Design\겜시디프로젝트코드\라베니아_의뢰_수행창\라베니아_의뢰_수행창\d_puzzle1.cpp(84): warning C4715: 'Scan_img::FileScan': 모든 제어 경로에서 값을 반환하지는 않습니다.
+C:\Users\doo71\OneDrive\문서\GitHub\Game_System_Design\겜시디프로젝트코드\라베니아_의뢰_수행창\라베니아_의뢰_수행창\d_puzzle1.cpp(138): warning C4715: 'Scan_img::End_puzzle': 모든 제어 경로에서 값을 반환하지는 않습니다.
+C:\Users\doo71\OneDrive\문서\GitHub\Game_System_Design\겜시디프로젝트코드\라베니아_의뢰_수행창\라베니아_의뢰_수행창\d_puzzle1.cpp(22): warning C4715: 'Draw_art::FileScan': 모든 제어 경로에서 값을 반환하지는 않습니다.
+C:\Users\doo71\OneDrive\문서\GitHub\Game_System_Design\겜시디프로젝트코드\라베니아_의뢰_수행창\라베니아_의뢰_수행창\d_puzzle1.cpp(170): warning C4715: 'd_puzzle1': 모든 제어 경로에서 값을 반환하지는 않습니다.
   라베니아_의뢰_수행창.vcxproj -> C:\Users\doo71\OneDrive\문서\GitHub\Game_System_Design\겜시디프로젝트코드\라베니아_의뢰_수행창\x64\Debug\라베니아_의뢰_수행창.exe

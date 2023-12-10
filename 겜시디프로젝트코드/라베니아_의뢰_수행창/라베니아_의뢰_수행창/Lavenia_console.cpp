@@ -3,6 +3,7 @@
 #include <conio.h>
 #include <Windows.h>
 #include "Console.h"
+#include "dpuzzle.h"
 using namespace std;
 
 int main() {

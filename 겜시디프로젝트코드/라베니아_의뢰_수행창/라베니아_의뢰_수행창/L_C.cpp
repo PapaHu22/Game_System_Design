@@ -3,6 +3,7 @@
 #include <Windows.h>
 #include <conio.h>
 #include "Console.h"
+#include "dpuzzle.h"
 using namespace std;
 
 void Console::Open() {
@@ -200,12 +201,12 @@ void Console::Puzzle(int ch) {
 	case 0:
 		keyPressed = _getch();
 		cout << "퍼즐을 수행하였습니다" << endl;
-		//퍼즐
+		d_puzzle1();
 		break;
 	case 1:
 		keyPressed = _getch();
 		cout << "퍼즐을 수행하였습니다" << endl;
-		//퍼즐
+		d_puzzle2();
 		break;
 	case 2:
 		keyPressed = _getch();

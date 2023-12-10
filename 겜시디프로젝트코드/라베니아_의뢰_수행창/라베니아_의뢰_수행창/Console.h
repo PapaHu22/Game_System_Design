@@ -9,4 +9,6 @@ public:
 	int Find_File(int ch, int p, int l);
 	void Puzzle(int ch);
 	void create_Clear_File(int ch, int p, int l);
+
 };
+

@@ -1,5 +1,5 @@
 ﻿  Lavenia_console.cpp
   L_C.cpp
   코드를 생성하고 있습니다...
-C:\Users\USER\OneDrive\바탕 화면\대학생활\2학년 2학기\게임시스템디자인\겜시디프로젝트\겜시디프로젝트코드\라베니아_의뢰_수행창\라베니아_의뢰_수행창\L_C.cpp(195): warning C4715: 'Console::Find_File': 모든 제어 경로에서 값을 반환하지는 않습니다.
-  라베니아_의뢰_수행창.vcxproj -> C:\Users\USER\OneDrive\바탕 화면\대학생활\2학년 2학기\게임시스템디자인\겜시디프로젝트\겜시디프로젝트코드\라베니아_의뢰_수행창\x64\Debug\라베니아_의뢰_수행창.exe
+C:\Users\doo71\OneDrive\문서\GitHub\Game_System_Design\겜시디프로젝트코드\라베니아_의뢰_수행창\라베니아_의뢰_수행창\L_C.cpp(195): warning C4715: 'Console::Find_File': 모든 제어 경로에서 값을 반환하지는 않습니다.
+  라베니아_의뢰_수행창.vcxproj -> C:\Users\doo71\OneDrive\문서\GitHub\Game_System_Design\겜시디프로젝트코드\라베니아_의뢰_수행창\x64\Debug\라베니아_의뢰_수행창.exe

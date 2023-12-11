@@ -72,7 +72,7 @@ void Draw_art::Restart() {
 const char* Scan_img::FileScan() {
 	cout << "폴더에 생성된 txt파일을 열어 안에 있는 퀴즈의 정답을 입력하시오." << endl;
 	str = "페르테부크의 적대국 이름은?";
-	ofstream fout("what_is_nation_name?");
+	ofstream fout("what_is_nation_name.txt");
 
 	if (!fout) {
 		cout << "파일 열기 오류" << endl;

@@ -1,5 +1,5 @@
 ﻿  story.cpp
-C:\Users\USER\OneDrive\문서\GitHub\Game_System_Design\겜시디프로젝트코드\선택과 집중_스토리\선택과 집중_스토리\story.h(23,15): warning C4099: 'Country': 처음에는 'struct'을(를) 사용하여 형식 이름을 표시했는데 이제는 'class'을(를) 사용하여 표시합니다.
-C:\Users\USER\OneDrive\문서\GitHub\Game_System_Design\겜시디프로젝트코드\선택과 집중_스토리\선택과 집중_스토리\story.h(23,7): message : 'Country' 선언을 참조하십시오.
+C:\Users\USER\OneDrive\문서\GitHub\Game_System_Design\겜시디프로젝트코드\선택과 집중_스토리\선택과 집중_스토리\story.h(22,15): warning C4099: 'Country': 처음에는 'struct'을(를) 사용하여 형식 이름을 표시했는데 이제는 'class'을(를) 사용하여 표시합니다.
+C:\Users\USER\OneDrive\문서\GitHub\Game_System_Design\겜시디프로젝트코드\선택과 집중_스토리\선택과 집중_스토리\story.h(22,7): message : 'Country' 선언을 참조하십시오.
 C:\Users\USER\OneDrive\문서\GitHub\Game_System_Design\겜시디프로젝트코드\선택과 집중_스토리\선택과 집중_스토리\story.cpp(64,6): warning C4101: 'temp' :참조되지 않은 지역 변수입니다.
   선택과 집중_스토리.vcxproj -> C:\Users\USER\OneDrive\문서\GitHub\Game_System_Design\겜시디프로젝트코드\선택과 집중_스토리\x64\Debug\선택과 집중_스토리.exe

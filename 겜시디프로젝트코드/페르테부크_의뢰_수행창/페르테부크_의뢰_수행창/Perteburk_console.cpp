@@ -1,11 +1,14 @@
 #include <iostream>
 #include <fstream>
 #include <conio.h>
+#include <vector>
 #include "Console.h"
+#include "Puzzle.h"
 using namespace std;
 
 int main() {
 	Console PC;
+
 	int ch;
 	int pz;
 	int p, l;
@@ -20,7 +23,7 @@ int main() {
 			//의뢰 파일 인식
 			pz = PC.Find_File(ch, p, l);
 			if (pz == 1) {
-				PC.Puzzle(ch);
+				PC.Puzzled(ch);
 				PC.create_Clear_File(ch, p, l);
 				p++;
 				system("cls");

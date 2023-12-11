@@ -158,7 +158,7 @@ void Puzzle2::play() {
             Draw();
             Input();
             Logic();
-            Sleep(100);
+            Sleep(500);
         }
         Draw();
         if (SuccesRate >= 100) {

@@ -2,6 +2,8 @@
 #include <fstream>
 #include <Windows.h>
 #include <conio.h>
+#include <vector>
+#include "Puzzle.h"
 #include "Console.h"
 using namespace std;
 
@@ -193,25 +195,35 @@ int Console::Find_File(int ch, int p, int l) {
 	}
 }
 
-void Console::Puzzle(int ch) {
+void Console::Puzzled(int ch) {
+	Puzzle1 pz1;
+	Puzzle2 pz2;
+	Puzzle3 pz3;
+	Puzzle4 pz4;
+
+
 	char keyPressed;
 	switch (ch) {
 	case 0:
 		//퍼즐
+		pz1.play(); // 미로
 		keyPressed = _getch();
 		cout << "퍼즐을 수행하였습니다" << endl;
 		break;
 	case 1:
+		pz4.play(); // 문제풀기
 		keyPressed = _getch();
 		cout << "퍼즐을 수행하였습니다" << endl;
 		//퍼즐
 		break;
 	case 2:
+		pz3.play(); // 폭탄해제
 		keyPressed = _getch();
 		cout << "퍼즐을 수행하였습니다" << endl;
 		//퍼즐
 		break;
 	case 3:
+		pz2.play(); // 스네이크
 		keyPressed = _getch();
 		cout << "퍼즐을 수행하였습니다" << endl;
 		//퍼즐
@@ -219,6 +231,7 @@ void Console::Puzzle(int ch) {
 	default:
 		cout << "오류" << endl;
 	}
+
 }
 
 void Console::create_Clear_File(int ch, int p, int l) {

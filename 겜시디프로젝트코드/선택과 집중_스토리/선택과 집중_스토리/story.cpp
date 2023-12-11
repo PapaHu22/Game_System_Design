@@ -5,6 +5,8 @@
 #include "story.h"
 using namespace std;
 
+void ClearLineFromReadBuffer() { while (getchar() != '\n'); }
+
 int Country::Get_sd() { return selected; }
 void Country::sd_Plus() { selected++; }
 
@@ -70,8 +72,8 @@ void Game::prologue() {
 	system("cls");
 	//print_Line();
 	cout << "\t\t프롤로그" << endl << endl << endl;
-	cout << "중립군 르벤(Reven) 출신의 뛰어난 실력을 가진 해커 이명 '시카'" << endl;
-	cout << "현시점 전쟁 중인 두 국가는 서로의 기밀 정보를 빼오기 위해 뛰어난 해커 '시카'에게 의뢰를 넣는다" << endl << endl;
+	cout << "\t\t중립군 르벤(Reven) 출신의 뛰어난 실력을 가진 해커 이명 '시카'" << endl;
+	cout << "\t\t현시점 전쟁 중인 두 국가는 서로의 기밀 정보를 빼오기 위해 뛰어난 해커 '시카'에게 의뢰를 넣는다" << endl << endl;
 	cout << "....다음(아무키 입력)" << endl << endl << endl;
 	//print_Line();
 	keyPressed = _getch();
@@ -92,6 +94,7 @@ int Game::Choice_Mission() {
 		else {
 			cout << "잘못된 입력입니다. 다시 입력해주세요 >> ";
 		}
+		ClearLineFromReadBuffer();
 	}
 
 	if (m == 1) {
@@ -107,6 +110,8 @@ int Game::Choice_Mission() {
 
 void Game::Create_Mission_File(int c, int p, int l, int m) {
 	ofstream fout;
+	
+	
 
 	switch (c) {
 	case 0:
@@ -118,7 +123,7 @@ void Game::Create_Mission_File(int c, int p, int l, int m) {
 		}
 		break;
 	case 1:
-		if (p == 1 && l == 0) {
+		if (p == 1) {
 			if (m == 1) {
 				fout.open("ch2_p_p_mission.txt");//ch2_p_p_mission.txt
 			}
@@ -136,7 +141,7 @@ void Game::Create_Mission_File(int c, int p, int l, int m) {
 		}
 		break;
 	case 2:
-		if (p == 2 && l == 0) {
+		if (p == 2) {
 			if (m == 1) {
 				fout.open("ch3_2p_p_mission.txt");//ch2_2p_p_mission.txt
 			}
@@ -144,7 +149,7 @@ void Game::Create_Mission_File(int c, int p, int l, int m) {
 				fout.open("ch3_2p_l_mission.txt");//ch2_2p_l_mission.txt
 			}
 		}
-		else if (p == 1 && l == 1) {
+		else if (p == 1) {
 			if (m == 1) {
 				fout.open("ch3_pl_p_mission.txt");//ch2_pl_p_mission.txt
 			}
@@ -162,10 +167,10 @@ void Game::Create_Mission_File(int c, int p, int l, int m) {
 		}
 		break;
 	case 3:
-		if (p == 3 && l == 0) {
+		if (p == 3) {
 			fout.open("ch4_3p_p_mission.txt");//ch2_3p_p_mission.txt
 		}
-		else if (p == 2 && l == 1) {
+		else if (p == 2) {
 			if (m == 1) {
 				fout.open("ch4_2pl_p_mission.txt");//ch2_2pl_p_mission.txt
 			}
@@ -173,7 +178,7 @@ void Game::Create_Mission_File(int c, int p, int l, int m) {
 				fout.open("ch4_2pl_l_mission.txt");//ch2_2pl_l_mission.txt
 			}
 		}
-		else if (p == 1 && l == 2) {
+		else if (p == 1) {
 			if (m == 1) {
 				fout.open("ch4_p2l_p_mission.txt");//ch2_p2l_p_mission.txt
 			}
@@ -458,6 +463,10 @@ void Game::Proglation(Country* P, Country* L) {
 	int p = P->Get_sd();
 	int l = P->Get_sd();
 
+	printf("p: %d  l :%d", P->Get_sd(), L->Get_sd());
+	char keyPressed = _getch();
+
+
 	switch (chapter) {
 	case 0:
 		m = Choice_Mission();
@@ -525,6 +534,10 @@ void Game::Proglation(Country* P, Country* L) {
 	chapter++;
 }
 
+void Game::Ending(int p, int l) {
+
+}
+
 void Game::start() {
 	Country Perteburk;
 	Country Lavenia;
@@ -538,5 +551,5 @@ void Game::start() {
 	Proglation(&Perteburk, &Lavenia); // 스토리진행 3
 	Proglation(&Perteburk, &Lavenia); // 스토리진행 4
 
-
+	Ending(int p, int l); // 엔딩
 }

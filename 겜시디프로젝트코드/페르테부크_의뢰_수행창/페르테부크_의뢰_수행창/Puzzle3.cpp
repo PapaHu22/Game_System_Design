@@ -13,7 +13,7 @@ void additionalFunction() {
         "해당 꽃의 이름 일부 발췌: 지중해 연안에 자생하는 미나리아재비과의 식물로, 4~5월이 되면 줄기마다 하나씩 지름 6~7cm의 꽃을 피운다. 꽃잎의 색은 붉은색, 흰색, 분홍색, 자주색, 노란색, 하늘색 등으로 다양하다."
     };
 
-    ofstream hintFile("C:\\Documents\\Hint.txt");//위치 중요
+    ofstream hintFile("Hint.txt");//위치 중요
 
     if (hintFile.is_open()) {
         for (int i = 0; i < 3; ++i) {

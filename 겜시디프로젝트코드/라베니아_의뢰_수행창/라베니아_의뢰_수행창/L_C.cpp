@@ -4,6 +4,7 @@
 #include <conio.h>
 #include "Console.h"
 #include "dpuzzle.h"
+#include "tpuzzle.h"
 using namespace std;
 
 void Console::Open() {
@@ -196,24 +197,29 @@ int Console::Find_File(int ch, int p, int l) {
 }
 
 void Console::Puzzle(int ch) {
+	Puzzle1 pz1;
+	Puzzle3 pz3;
+
 	char keyPressed;
 	switch (ch) {
 	case 0:
+		pz1.play();
 		keyPressed = _getch();
 		cout << "퍼즐을 수행하였습니다" << endl;
-		d_puzzle1();
 		break;
 	case 1:
+		d_puzzle1();
 		keyPressed = _getch();
 		cout << "퍼즐을 수행하였습니다" << endl;
-		d_puzzle2();
 		break;
 	case 2:
+		pz3.play();
 		keyPressed = _getch();
 		cout << "퍼즐을 수행하였습니다" << endl;
 		//퍼즐
 		break;
 	case 3:
+		d_puzzle2();
 		keyPressed = _getch();
 		cout << "퍼즐을 수행하였습니다" << endl;
 		//퍼즐

@@ -8,7 +8,7 @@ using namespace std;
 
 
 const char* Draw_art::FileScan() {
-	const char* file = "C:\\Users\\doo71\\OneDrive\\문서\GitHub\\Game_System_Design\\겜시디프로젝트코드\\라베니아_의뢰_수행창\\라베니아_의뢰_수행창\\퀴즈.txt";
+	const char* file = "Lavenia_1_퀴즈.txt";
 	ifstream fin(file);
 	if (!fin) {
 		cout << file << "열기 오류" << endl;
@@ -72,7 +72,7 @@ void Draw_art::Restart() {
 const char* Scan_img::FileScan() {
 	cout << "폴더에 생성된 txt파일을 열어 안에 있는 퀴즈의 정답을 입력하시오." << endl;
 	str = "페르테부크의 적대국 이름은?";
-	ofstream fout("C:\\Users\\doo71\\OneDrive\\문서\\GitHub\\Game_System_Design\\겜시디프로젝트코드\\라베니아_의뢰_수행창\\라베니아_의뢰_수행창\\what_is_nation_name?");
+	ofstream fout("what_is_nation_name?");
 
 	if (!fout) {
 		cout << "파일 열기 오류" << endl;

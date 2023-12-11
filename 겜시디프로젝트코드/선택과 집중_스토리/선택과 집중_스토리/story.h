@@ -12,8 +12,7 @@ public:
 	void Create_Mission_File(int c, int p, int l, int m); // 미션 파일 생성
 	void Find_Clear_File(int ch);
 	int Choice_Mission(); // 미션 선택
-	void Ending(); // 엔딩
-	void Epilogue(); // 에필로그
+	void Ending(int p, int l); // 엔딩
 	void print_Line(); // 선 긋기
 	void print_Story(int c, int p, int l, int m); // 스토리 출력
 	void print_clear_Story(int c, int p, int l, int m); // 의뢰 수행 후 스토리 출력
